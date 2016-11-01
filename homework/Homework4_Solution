@@ -1,0 +1,37 @@
+/*
+
+1.
+
+import java.util.Scanner;
+class Main{
+	public static void main(String args[]){
+		Scanner cmd = new Scanner(System.in);
+		System.out.println("Enter your payrate: ");
+		double payrate = cmd.nextDouble();
+		System.out.println("Enter your hours worked this week: ");
+		int hours = cmd.nextInt();
+		
+		double totalPay= getTotalPay(hours, payrate);
+		double percentage = getPercentage(hours);
+		displayOutput(payrate, hours, percentage, totalPay);
+	}
+	public static double getTotalPay(int h, double p){
+		if(h >= 40){
+		double ot = (( h % 40 ) + 40) * p; return (ot + (h % 40));
+		}
+			
+		return (h * p);
+	}
+	public static double getPercentage(int h){
+		
+		return (double)(h / 40.0) * 100 ;
+	}
+	public static void displayOutput(double p, int h, double pc, double total){
+		System.out.println("Pay Rate: $" + p);
+		System.out.println("Hours Worked: " + h);
+		System.out.println("Percentage worked per week: " + pc);
+		System.out.println("Total Pay Earned : $" + total);
+	}
+	
+}
+*/
