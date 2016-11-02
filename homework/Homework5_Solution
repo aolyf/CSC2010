@@ -1,0 +1,37 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Welcome to the number guessing game where you will guess a number between 1 and 100.");
+    int random = ( int )(Math.random() * 100 + 1);
+    int tries = 1;
+    Scanner cmd = new Scanner(System.in);
+    int guess = 1;
+    String ask = "What is your guess? ";
+    String high = "Too high!";
+    String low = "Too low!";
+    while((tries <= 10)&&(guess!=random)){
+    	System.out.println(ask);
+    	guess = cmd.nextInt();
+    	if(guess==random){
+    		winner(tries);
+    	}
+    	else if(guess<random){
+    		System.out.println(low);
+    	}
+    	else if(guess>random){
+    		System.out.println(high);
+    	}
+    	if((tries==10)&&(guess!=random)){
+    		loser(random);
+    	}
+    	tries++;
+    }
+  }
+    public static void winner(int tries){
+    	System.out.println("Nice. It took you " + (tries) + " attempts. You are1 a truly excellent decision maker.");
+    }
+    public static void loser(int random){
+    	System.out.println("You make me sick! This is pathetic! The number was OBVIOUSLY " + random + " you plebeian!");
+    	
+    }
+  }
