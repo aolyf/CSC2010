@@ -1,0 +1,8 @@
+class Main {
+  public static void main(String[] args) {
+    System.out.println("My name is Charlie Brown");
+    System.out.println("My age is 21");
+    System.out.println("Twice my age is " + (21*2));
+    System.out.println("Half my age is " + (21.0/2));
+    }
+  }
