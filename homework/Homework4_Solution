@@ -35,3 +35,46 @@ class Main{
 	
 }
 */
+/*
+2. 
+import java.util.Scanner;
+
+class Main{
+	public static void main(String args[]){
+	Scanner cmd = new Scanner(System.in);
+	System.out.print("What is your name?: ");
+	String name = cmd.nextLine();
+	name = name.toLowerCase();
+	printReverse(name);
+	printNickName(name);
+	printPyramid(name);
+	}
+	public static void printReverse(String name){
+	String reverse="";
+		for(int i = name.length()-1; i >= 0; i--){
+			reverse += name.charAt(i);
+		}
+		System.out.println(reverse);
+	}
+	
+	
+	public static void printNickName(String name){
+		if(name.length()>2){
+			System.out.println((name.substring(0,1)) + 
+			(name.substring(name.length()-2,name.length())));
+		}
+		else{
+			System.out.println(name);
+		}
+	}
+	public static void printPyramid(String name){
+		for(int i = 0; i <= name.length()-1; i++){
+			for(int j = 0; j <= i; j++){
+				System.out.print(name.charAt(i));
+			}
+			System.out.println();
+		}
+	}
+	
+}
+*/
