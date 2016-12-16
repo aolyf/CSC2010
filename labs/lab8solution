@@ -1,0 +1,31 @@
+public class Main {
+    //1.
+    public static void main(String[] args) {
+        double x1 = 2.0, y1 = 3.0, x2 = 7.0, y2 = 2.0;
+        distance(x1, y1, x2, y2);
+
+        meth1(2, 1);
+        meth2(1.0 d, 2.0 d, 3.0 d);
+        meth3("Bob", "Bobson");
+
+    }
+    public static void distance(double x1, double x2, double y1, double y2) {
+            double xDiff = x1 - x2;
+            double yDiff = y1 - y2;
+            System.out.println("Distance = " + (int) Math.sqrt(xDiff * xDiff + yDiff * yDiff));
+        }
+        // not double cause value is type cast to int
+
+
+    //2. 
+    public static void meth1(int num1, int num2) {
+        System.out.println(num1 - num2);
+    }
+    public static void meth2(double d1, double d2, double d3) {
+        System.out.println((d1 + d2 + d3) / 3);
+    }
+    public static void meth3(String fname, String lname) {
+        System.out.println(fname + " " + lname);
+    }
+
+}
